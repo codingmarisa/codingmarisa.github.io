@@ -1,0 +1,244 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); 
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+#container {
+  max-width: 40%;
+  margin:  3% auto;
+  padding: 1%;
+  align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background-color: rgba(224,226,219,0.85);
+}
+
+#title {
+  text-align: center;
+}
+
+#description {
+  margin: 0px 10px 20px 10px;
+  text-align: center;
+}
+
+.form-div {
+  margin: 10px 5px;
+}
+
+/* Remove default styles */
+
+input[type="radio"], input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+fieldset {
+  border: 0;
+  margin-left: -15px;
+}
+
+/** Style Input Fields **/
+.input-div {
+  display: flex;
+}
+
+.input-label {
+  margin: auto;
+  display: inline-block;
+  width: 125px;
+}
+
+.input-field {
+  flex-grow: 1;
+  border-color: #d2d4c8; 
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  padding: 0.25em 0.5em;
+  border-radius: 4px;
+}
+
+.input-field:hover{
+  outline: none !important;
+  border-color: white;
+  box-shadow: 0 0 5px #4c5350;
+}
+
+.input-field:focus {
+  outline: none !important;
+  border-color: #4c5350;
+  box-shadow: 0 0 5px #4c5350;
+}
+
+#comments {
+  width: 100%;
+}
+
+/** Style Radio Buttons **/
+
+#radio-div {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#radio-button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.radio-button-label {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  margin: 10px 50px 10px 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid #eee;
+  border-radius: 50%;
+
+}
+
+.radio-button-label:hover input ~ .radio-button {
+  background-color: #ccc;
+  border: 2px solid #2e3532;
+  transform: scale(1.2);
+}
+
+.radio-button-label input:checked ~ .radio-button {
+  background-color: #878880;
+  border: 2px solid #2e3532;
+}
+
+.radio-button:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-button-label input:checked ~ .radio-button:after {
+  display: block;
+}
+
+.radio-button-label .radio-button:after {
+  top: 3px;
+  left: 3px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #e0e2db;
+}
+
+/** Style Checkboxes **/
+
+#checkbox-div {
+  margin-bottom: 15px;
+}
+
+#checkbox-button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox-label {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  margin: 10px 50px 10px 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid #eee;
+}
+
+.checkbox-label:hover input ~ .checkmark {
+  background-color: #ccc;
+  border: 2px solid #2e3532;
+  transform: scale(1.2);
+}
+
+.checkbox-label input:checked ~ .checkmark {
+  background-color: #878880;
+  border: 2px solid #2e3532;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-label .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/** Style Submit Button **/
+
+#submit-div {
+  text-align: center;
+}
+
+#submit {
+  font-size: 16px;
+  width: 100px;
+  height: 3em;
+  padding: 5px;
+  margin: 25px;
+  background-color: #e0e2db;
+  border-color: #d2d4c8; 
+  border-radius: 4px;
+}
+
+#submit:hover {
+  background-color: #ccc;
+  border: 2px solid #2e3532;
+  transform: scale(1.1);
+}

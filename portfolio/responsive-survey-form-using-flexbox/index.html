@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+  <div id="container">
+    <h1 id="title">Survey Title</h1>
+    <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet posuere justo</p>
+    <form action="#" id="survey-form">
+      <div id="name-div" class="form-div input-div">
+      <label for="name" id="name-label" class="input-label">Name:</label>
+      <input type="text" id="name" class="input-field" placeholder="John Doe" required>
+      </div>
+      
+      <div id="email-div" class="form-div input-div">
+      <label for="email" id="email-label" class="input-label">Email:</label>
+      <input type="email" id="email" class="input-field" placeholder="example@example.com" required>
+      </div>
+      
+      <div id="number-div" class="form-div input-div">
+      <label for="number" id="number-label" class="input-label">Number:</label>
+      <input type="number" id="number" placeholder="35" class="input-field" min="1" max="99">
+      </div>
+      
+      <div id="select-div" class="form-div input-div">
+      <label for="select-demo" class="input-label">Choose One:</label>
+      <select name="select-demo" id="dropdown" class="input-field">
+        <option value="a">Option A</option>
+        <option value="b">Option B</option>
+        <option value="c">Option C</option>
+      </select>
+      </div>
+      
+      <div id="radio-div" class="form-div">
+      <fieldset>
+        <legend class="radio-checkbox-legend">Category Radio Button</legend>
+        
+        <div id="radio-button-div">
+        <label for="radio-demo-1" class="radio-button-label">
+        <input id="radio-demo-1" type="radio" name="radio" value="a">
+        <span class="radio-button"></span>
+        Radio 1</label>
+        
+        <label for="radio-demo-2" class="radio-button-label">
+        <input id="radio-demo-2" type="radio" name="radio" value="b">
+          <span class="radio-button"></span>
+        Radio 2</label>
+        
+        <label for="radio-demo-3" class="radio-button-label">
+        <input id="radio-demo-3" type="radio" name="radio" value="c">
+        <span class="radio-button"></span>
+        Radio 3</label>
+        </div>
+      </fieldset>
+      </div>
+      
+      <div id="checkbox-div" class="form-div">  
+      <fieldset>
+        <legend>Category Checkbox</legend>
+        
+        <div id="checkbox-button-div">
+        <label for="check-one" class="checkbox-label">
+        <input id="check-one" type="checkbox" name="checkboxes" value="one">Check One
+        <span class="checkmark"></span>
+        </label>
+        
+        <label for="check-two" class="checkbox-label">
+        <input id="check-two" type="checkbox" name="checkboxes" value="two">Check Two
+        <span class="checkmark"></span>        
+        </label>
+        
+        <label for="check-three" class="checkbox-label">
+        <input id="check-three" type="checkbox" name="checkboxes" value="three">Check Three
+          <span class="checkmark"></span>
+        </label>
+        </div>
+      </fieldset>
+      </div>
+      
+      <div id="comments-div" class="form-div">  
+      <label for="comments">Additional Comments</label>
+        <br>
+      <textarea id="comments" name="comments" class="input-field" rows="5" cols="33">Leave comments here.</textarea>
+      </div>
+      
+      <div id="submit-div">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+      
+    </form>
+    </div>
+
+</body>
+</html>
