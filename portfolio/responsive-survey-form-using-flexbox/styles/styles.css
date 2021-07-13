@@ -14,7 +14,7 @@ body {
 }
 
 #container {
-  max-width: 40%;
+  width: 700px;
   margin:  3% auto;
   padding: 1%;
   align: center;
@@ -59,7 +59,7 @@ fieldset {
 
 .input-label {
   margin: auto;
-  display: inline-block;
+  /*display: inline-block;*/
   width: 125px;
 }
 
@@ -67,7 +67,6 @@ fieldset {
   flex-grow: 1;
   border-color: #d2d4c8; 
   font-size: 16px;
-  font-family: 'Rubik', sans-serif;
   padding: 0.25em 0.5em;
   border-radius: 4px;
 }
@@ -241,4 +240,90 @@ fieldset {
   background-color: #ccc;
   border: 2px solid #2e3532;
   transform: scale(1.1);
+}
+
+
+/** Responsive Adjustments **/
+
+@media all and (max-width: 750px) {
+  #container {
+    width: 500px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  #container {
+    width: 400px;
+    flex-flow: column nowrap;
+  }
+  
+  #description {
+    width: 390px;
+    margin: 5px 3px 10px 3px;
+  }
+  
+  .form-div {
+    flex-flow: column nowrap;
+    margin: 5px; 
+  }
+  
+  .input-div {
+    width: 375px;
+    margin-bottom: 20px;
+  }
+  
+  .input-label {
+    width: auto; 
+  }
+  
+  #radio-div, #checkbox-div {
+    margin-bottom: 5px;
+  }
+  
+  #radio-button-div {
+    flex-flow: column wrap; 
+  }
+
+  #checkbox-button-div {
+    flex-flow: column wrap;
+  }
+  
+  #comments {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 420px) {
+  #container {
+    width: 320px;
+  }
+  
+  #description {
+    width: 310px;
+    margin: 5px 1px;
+  }
+  
+  .form-div {
+    margin: 1px; 
+  }
+  
+  .input-div {
+    width: 310px;
+    margin: 20px 1px;
+  }
+  
+}
+
+@media all and (max-width: 320px) {
+#container {
+    width: 300px;
+  }
+
+  #description {
+    width: 290px;
+  }
+  
+  .input-div {
+    width: 290px;
+  }
 }
