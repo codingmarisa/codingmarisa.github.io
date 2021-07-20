@@ -3,7 +3,11 @@
 }
 
 body {
-  background-image: url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); 
+  background: url('../images/pexels-cátia-matos-1072179.jpg') #2e3532; 
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
   margin: 0;
@@ -13,7 +17,6 @@ body {
   width: 700px;
   margin:  3% auto;
   padding: 1%;
-  align: center;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
