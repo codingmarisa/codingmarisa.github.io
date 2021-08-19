@@ -78,6 +78,7 @@ html {
   
   #info-div {
     width: 50%;
+    min-width: 600px;
     margin: 30px 0;
     padding: 10px 30px;
   }
@@ -134,9 +135,10 @@ html {
   
   /** Responsive Adjustments **/
   
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 829px) {
     header {
-      flex-flow: column wrap;
+      flex-flow: row wrap;
+      justify-content: center;
     }
   
     #logo-title-div {
@@ -144,7 +146,39 @@ html {
     }
   
     #nav-bar {
-      flex-flow: row nowrap;
+      flex-flow: row wrap;
+      margin: 10px 0;
+    }
+  }
+  
+  @media all and (max-width: 800px) {
+    main {
+      padding-top: 150px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    #info-div {
+      width: 90%;
+      min-width: 350px;
+    }
+    
+    #email {
+      width: 90%;
+    }
+  }
+  
+  @media all and (max-width: 496px) {
+    #nav-bar {
+      display: block;
+      margin-right: 0;
+    }
+  
+    #nav-bar a {
+      padding: 0;
+      margin: 15px 25px;
     }
   }
   
