@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    background-color: rgba(159, 210, 234, 0.25);
+    font-family: "Lato", sans-serif;
+  }
+  
+  header {
+    background-color: #ffc32b;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  #header-img {
+    height: 35px;
+    width: auto;
+  }
+  
+  #nav-bar {
+    margin-right: 25px;
+  }
+  
+  #nav-bar a {
+    color: black;
+    font-size: 20px;
+    padding: 0 20px;
+    text-decoration: none;
+    margin: 30px;
+  }
+  
+  #nav-bar a:hover {
+    text-transform: uppercase;
+  }
+  
+  main {
+    padding-top: 85px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  
+  h1 {
+    text-shadow: 0.1px 0.1px #ffc32b;
+  }
+  
+  h2 {
+    text-align: center;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 20px;
+  }
+  
+  p {
+    padding: 10px;
+  }
+  
+  .mailing-list {
+    text-align: center;
+  }
+  
+  #video-div {
+    margin: 35px 0;
+  }
+  
+  #info-div {
+    width: 50%;
+    margin: 30px 0;
+    padding: 10px 30px;
+  }
+  
+  #form-div {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 0 0 10px 0;
+  }
+  
+  #email, #submit {
+    line-height: 1.3em;  
+  }
+  
+  #email {
+    width: 350px;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    box-shadow: 0 0 5px #035a86;
+  }
+  
+  #email:hover{
+    transform: scale(1.02);
+  }
+  
+  #email:focus {
+    outline: none !important;
+    border-color: #ffc32b;
+    box-shadow: 0 0 5px #035a86;
+  }
+  
+  #submit {
+    padding: 5px 20px;
+    margin: 8px 1px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    background-color: #9fd2ea;
+    box-shadow: 0 0 5px #035a86;
+  }
+  
+  #submit:hover {
+    background-color: #ffc32b;
+    box-shadow: 0 0 5px black;
+    transform: scale(1.02);
+  }
+  
+  #submit:focus {
+    border-color: #035a86;
+    background-color: #ffae42;
+  }
+  
+  /** Responsive Adjustments **/
+  
+  @media all and (max-width: 500px) {
+    header {
+      flex-flow: column wrap;
+    }
+  
+    #logo-title-div {
+      flex-flow: row nowrap;
+    }
+  
+    #nav-bar {
+      flex-flow: row nowrap;
+    }
+  }
+  
